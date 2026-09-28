@@ -1,0 +1,17 @@
+{
+  "name": "tafheem",
+  "owner": {
+    "name": "Muhammad Tayyab",
+    "url": "https://github.com/datamino"
+  },
+  "metadata": {
+    "description": "Tafheem: a guided learning skill that builds a hierarchical mental model of any topic, one level at a time."
+  },
+  "plugins": [
+    {
+      "name": "tafheem",
+      "source": "./",
+      "description": "Learn any unfamiliar topic by building a hierarchical mental model: see the whole first, then go one level deeper at a time, guided step by step."
+    }
+  ]
+}

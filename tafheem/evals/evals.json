@@ -1,0 +1,130 @@
+{
+  "skill_name": "tafheem",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "i've got a networking exam in 2 weeks. i know the basics like what an IP address is and what a router does, but TCP still confuses me. help me understand how TCP actually works",
+      "expected_output": "A Phase 1 map of TCP at one level of depth: definition, boundary, major components, and how they relate, with an ASCII diagram and a lettered menu. No step-by-step mechanisms yet. A learning record file is created.",
+      "files": [],
+      "expectations": [
+        "Does not ask calibration questions before building the map, because the learner's level and goal are already stated",
+        "The response contains, in this order, a definition, a boundary, the major components, and the relationships between components",
+        "Names between 3 and 7 major components",
+        "Explains how at least two components interact with each other, rather than only listing components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Does not walk through step-by-step mechanisms such as the SYN, SYN-ACK, ACK exchange in the initial map",
+        "Ends with a menu that uses letters, with A to C naming specific components and D offering how the whole thing works",
+        "Creates a file named tafheem-<slug>.md in the working directory, where the slug refers to TCP",
+        "The created file contains the initial map and an exploration tracker listing every component as unexplored"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "my econ professor keeps saying the central bank 'controls inflation' but nobody ever explains how that actually works. im a second year business student, not an economist. can you break it down for me tafheem style",
+      "expected_output": "A Phase 1 map of how a central bank influences inflation, suited to a business student: definition, boundary, components such as the policy rate, commercial banks, borrowing and spending, and expectations, their relationships, an ASCII diagram, and a lettered menu. Non-technical topic handled without software vocabulary. A learning record file is created.",
+      "files": [],
+      "expectations": [
+        "Does not ask calibration questions before building the map, because the learner's level is already stated",
+        "The response contains, in this order, a definition, a boundary, the major components, and the relationships between components",
+        "The boundary states at least one thing that is outside the central bank's direct control",
+        "Explains the chain from a central bank action to a change in inflation through at least two intermediate components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Does not describe the economic components using software terms such as frontend, backend, or database",
+        "Ends with a menu that uses letters, with A to C naming specific components",
+        "Creates a file named tafheem-<slug>.md in the working directory containing the initial map and an exploration tracker"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I understand linear algebra and basic neural nets (MLPs, backprop) but attention in transformers has never clicked for me. I eventually want to understand it well enough to implement it myself. Build me a mental model first.",
+      "expected_output": "A Phase 1 map of attention for someone with linear algebra and MLP background: what attention is and what problem it solves, its boundary within the transformer, components such as queries, keys, values, scores, and the weighted sum, their relationships, an ASCII diagram, and a lettered menu. Implementation detail is deferred to later drills. A learning record file is created.",
+      "files": [],
+      "expectations": [
+        "Does not ask calibration questions before building the map, because the learner's level and goal are already stated",
+        "States the problem attention solves, not only what it computes",
+        "The boundary separates attention from other parts of the transformer, such as the feed-forward layers or positional encoding",
+        "Names queries, keys, and values as components and explains how they relate to one another",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Does not include implementation code in the initial map",
+        "Ends with a menu that uses letters, with A to C naming specific components",
+        "Creates a file named tafheem-<slug>.md in the working directory containing the initial map and an exploration tracker"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "help me understand LLMs, like how large language models actually work. im a software engineer, comfortable with code but i've never done any ML.",
+      "expected_output": "Phase 1 map of LLMs for a software engineer with no ML background. Map level only; training math and attention internals deferred to drills.",
+      "files": [],
+      "expectations": [
+        "Uses framing suited to a software engineer with no ML background",
+        "Starts with a view label stating the bird's-eye view at system level",
+        "The response contains, in this order, a definition, a boundary, a decomposition, the major components, and the relationships between components",
+        "Names between 3 and 7 major components, each described by its role in one or two lines rather than by how it works internally",
+        "Explains how at least two components interact, rather than only listing components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Contains no code, formulas, schemas, or file-format examples in the initial map",
+        "Does not explain internal mechanisms or give first-principles reasoning in the initial map",
+        "The map, excluding diagrams, is under 500 words",
+        "Ends with exactly one recommended next step asking the learner to continue, plus a one-line way out",
+        "Creates a tafheem-<slug>.md learning record in the working directory containing the initial map and an exploration tracker"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "help me understand the Jev model by TypesafeAI. i want a proper mental model of what it is and how it works.",
+      "expected_output": "Obscure or possibly unverifiable topic. A good answer either maps it from verified sources or clearly states what could not be verified, without inventing components.",
+      "files": [],
+      "expectations": [
+        "Does not present invented components, architecture, or mechanisms as established fact, and flags company claims as claims",
+        "Starts with a view label stating the bird's-eye view at system level",
+        "The response contains, in this order, a definition, a boundary, a decomposition, the major components, and the relationships between components",
+        "Names between 3 and 7 major components, each described by its role in one or two lines rather than by how it works internally",
+        "Explains how at least two components interact, rather than only listing components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Contains no code, formulas, schemas, or file-format examples in the initial map",
+        "Does not explain internal mechanisms or give first-principles reasoning in the initial map",
+        "The map, excluding diagrams, is under 500 words",
+        "Ends with exactly one recommended next step asking the learner to continue, plus a one-line way out",
+        "Creates a tafheem-<slug>.md learning record in the working directory containing the initial map and an exploration tracker"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "i just joined an autonomous driving simulation team and everyone talks about ASAM OpenDRIVE. i've never used it. help me understand it",
+      "expected_output": "Phase 1 map of ASAM OpenDRIVE for a newcomer to a simulation team: what it is, its boundary relative to OpenSCENARIO and OpenCRG, the road network components, and how they relate.",
+      "files": [],
+      "expectations": [
+        "The boundary distinguishes OpenDRIVE from at least one neighbouring standard such as OpenSCENARIO or OpenCRG",
+        "Starts with a view label stating the bird's-eye view at system level",
+        "The response contains, in this order, a definition, a boundary, a decomposition, the major components, and the relationships between components",
+        "Names between 3 and 7 major components, each described by its role in one or two lines rather than by how it works internally",
+        "Explains how at least two components interact, rather than only listing components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Contains no code, formulas, schemas, or file-format examples in the initial map",
+        "Does not explain internal mechanisms or give first-principles reasoning in the initial map",
+        "The map, excluding diagrams, is under 500 words",
+        "Ends with exactly one recommended next step asking the learner to continue, plus a one-line way out",
+        "Creates a tafheem-<slug>.md learning record in the working directory containing the initial map and an exploration tracker"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "I know the basics of ASAM OpenDRIVE road geometry but I'm confused about the geospatial side: georeferencing, coordinate systems, how an OpenDRIVE map ties to real-world positions. Help me understand the geospatial part of OpenDRIVE.",
+      "expected_output": "Phase 1 map of the geospatial part of OpenDRIVE, scoped to georeferencing and coordinate systems for a learner who already knows road geometry.",
+      "files": [],
+      "expectations": [
+        "Does not re-explain basic road geometry the learner already knows, beyond a brief link to it",
+        "Starts with a view label stating the bird's-eye view at system level",
+        "The response contains, in this order, a definition, a boundary, a decomposition, the major components, and the relationships between components",
+        "Names between 3 and 7 major components, each described by its role in one or two lines rather than by how it works internally",
+        "Explains how at least two components interact, rather than only listing components",
+        "Includes at least one ASCII diagram inside a fenced text block",
+        "Contains no code, formulas, schemas, or file-format examples in the initial map",
+        "Does not explain internal mechanisms or give first-principles reasoning in the initial map",
+        "The map, excluding diagrams, is under 500 words",
+        "Ends with exactly one recommended next step asking the learner to continue, plus a one-line way out",
+        "Creates a tafheem-<slug>.md learning record in the working directory containing the initial map and an exploration tracker"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tafheem",
+  "displayName": "Tafheem",
+  "version": "1.0.0",
+  "description": "Learn any unfamiliar topic by building a hierarchical mental model: see the whole first, then go one level deeper at a time, guided step by step.",
+  "author": {
+    "name": "Muhammad Tayyab",
+    "url": "https://github.com/datamino"
+  },
+  "homepage": "https://github.com/datamino/tafheem",
+  "repository": "https://github.com/datamino/tafheem",
+  "license": "MIT",
+  "keywords": ["learning", "mental-model", "explanation", "teaching", "first-principles"],
+  "skills": ["./tafheem"]
+}

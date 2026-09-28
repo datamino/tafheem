@@ -1,0 +1,9 @@
+# Test runs and generated artifacts (not part of the skill)
+tafheem-workspace/
+diagrams/
+
+# Learning records created while trying the skill in this folder
+tafheem-*.md
+!tafheem/
+
+.DS_Store

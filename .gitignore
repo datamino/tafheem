@@ -7,3 +7,6 @@ tafheem-*.md
 !tafheem/
 
 .DS_Store
+
+# Local research notes (not part of the skill)
+skill-best-practices.md

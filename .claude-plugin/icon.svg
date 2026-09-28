@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Tafheem">
+  <rect width="256" height="256" rx="56" fill="#0F3D3E"/>
+  <!-- links: whole -> parts -> one part deeper -->
+  <g stroke="#E8D9B5" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M128 78 L128 102 M128 102 L68 102 L68 128 M128 102 L128 128 M128 102 L188 102 L188 128"/>
+    <path d="M188 150 L188 172 M188 172 L162 172 L162 190 M188 172 L214 172 L214 190" stroke-opacity="0.55"/>
+  </g>
+  <!-- whole -->
+  <circle cx="128" cy="60" r="22" fill="#F2B84B"/>
+  <!-- parts -->
+  <circle cx="68" cy="140" r="15" fill="#E8D9B5"/>
+  <circle cx="128" cy="140" r="15" fill="#E8D9B5"/>
+  <circle cx="188" cy="140" r="15" fill="#E8D9B5"/>
+  <!-- one level deeper -->
+  <circle cx="162" cy="200" r="10" fill="#E8D9B5" fill-opacity="0.55"/>
+  <circle cx="214" cy="200" r="10" fill="#E8D9B5" fill-opacity="0.55"/>
+</svg>

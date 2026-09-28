@@ -36,31 +36,41 @@ This works for Claude Code, Codex, Cursor, and OpenCode.
 
 ### Step 2: install Tafheem
 
-#### Claude Code (recommended)
+Pick one option.
+
+#### Option A: Claude Code plugin (recommended for Claude Code)
 
 ```bash
 claude plugin marketplace add datamino/tafheem
 claude plugin install tafheem@tafheem
 ```
 
-Start a new session. Tafheem loads automatically when you ask to understand something, or run it directly with `/tafheem:tafheem`.
+Run it with `/tafheem:tafheem`. Updates arrive with `claude plugin update tafheem@tafheem`.
 
-#### Claude Code, without the plugin system
+#### Option B: one command, any agent
+
+Works for Claude Code, Cursor, Codex, OpenCode, and other agents that read Agent Skills.
+
+```bash
+npx skills add datamino/tafheem -g
+```
+
+`-g` installs it for all your projects. Leave it out to install into the current project only. Run it with `/tafheem`. Update later with `npx skills update`.
+
+#### Option C: manual copy
 
 ```bash
 git clone https://github.com/datamino/tafheem.git
 cp -R tafheem/tafheem ~/.claude/skills/tafheem
 ```
 
-Run it directly with `/tafheem`.
+For other agents, copy the `tafheem/` folder into that agent's skills directory instead, for example `.agents/skills/` for Codex or `.github/skills/` for GitHub Copilot. Tafheem uses the open [Agent Skills](https://agentskills.io/specification) format.
 
-#### Check it worked
+### Step 3: check it worked
 
 Start a new session and type `/`. You should see both `tafheem` and `archify` in the list. If Archify is missing, Tafheem tells you how to install it and keeps teaching with ASCII diagrams until you do.
 
-#### Other agents
-
-Tafheem uses the open [Agent Skills](https://agentskills.io/specification) format. Copy the `tafheem/` folder into your agent's skills directory, for example `.agents/skills/` for Codex or `.github/skills/` for GitHub Copilot.
+**Tip:** start your question with `/tafheem` to make sure the skill runs. Claude sometimes answers "how does X work" questions on its own without loading a skill.
 
 ---
 
